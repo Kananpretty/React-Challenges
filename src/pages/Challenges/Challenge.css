@@ -267,18 +267,34 @@
 
 @media screen and (max-width: 640px) {
   .challenge-page {
+    width: 100%;
     padding: 1.5rem 0.9rem 1rem;
   }
 
   .challenge-page__details,
-  .challenge-page__requirements,
-  .challenge-page__solution {
+  .challenge-page__requirements {
     border-radius: 14px;
     padding: 1rem;
+  }
+
+  .challenge-page__solution {
+    min-height: auto;
+    border-radius: 14px;
+    padding: 0.6rem;
   }
 
   .challenge-page__navigation {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .challenge-page__nav-link,
+  .challenge-page__nav-spacer {
+    width: 100%;
+  }
+
+  .challenge-page__nav-link--prev,
+  .challenge-page__nav-link--next {
+    margin: 0;
   }
 }
