@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- React Cyan Gradient -->
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#61DAFB"/>
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container Squircle -->
+  <rect width="64" height="64" rx="16" fill="url(#favBg)"/>
+  <rect width="64" height="64" rx="16" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+  <!-- React Orbit (Rotated) -->
+  <ellipse cx="32" cy="32" rx="22" ry="8.5" stroke="url(#cyanGlow)" stroke-width="2.5" transform="rotate(-30 32 32)" opacity="0.6"/>
+  <ellipse cx="32" cy="32" rx="22" ry="8.5" stroke="url(#accentGlow)" stroke-width="2.5" transform="rotate(30 32 32)" opacity="0.6"/>
+
+  <!-- Central Atom Core / Challenge Target -->
+  <circle cx="32" cy="32" r="4.5" fill="#61DAFB"/>
+
+  <!-- Compact Code Chevrons (< >) -->
+  <path d="M22 28L18 32L22 36" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M42 28L46 32L42 36" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,62 @@
+:root {
+  --page-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --element-header: #24113f;
+  --main-text: #18181b;
+  --muted-text: #64748b;
+  --emerald: #10b981;
+  --violet: #a855f7;
+  --border: #e2e8f0;
+  --shadow-soft: rgba(36, 17, 63, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--page-bg);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: "Manrope", "Inter", "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #f8fafc 0%, #f5f7fb 100%);
+  color: var(--main-text);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--page-bg);
+  color: var(--main-text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--element-header);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.22rem;
+  text-decoration-color: var(--violet);
+  opacity: 1;
+}
+
+a:visited {
+  color: inherit;
+}
