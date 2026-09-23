@@ -1,16 +1,107 @@
-# React + Vite
+# React Challenges
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of small React challenges built to practice React fundamentals, component design, state management, hooks, and common frontend patterns.
 
-Currently, two official plugins are available:
+The goal of this repository is to build small, focused implementations while strengthening React fundamentals through hands-on practice.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+[React Challenges](https://react-challenges-playground.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📁 Project Structure
 
-## Expanding the ESLint configuration
+```text
+react-challenges/
+├── src/
+│   ├── components/
+│   │   ├── ChallengeCard/
+│   │   └── Layout/
+│   ├── challenges/
+│   │   └── rc1-counter/
+│   │       └── Counter.jsx
+│   ├── data/
+│   │   └── challengesData.js
+│   ├── pages/
+│   │   ├── Home/
+│   │   └── Challenges/
+│   ├── App.jsx
+│   └── App.css
+├── public/
+├── package.json
+└── README.md
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧩 Challenges
+
+| # | Challenge | Concepts             | Difficulty |
+| - | --------- | -------------------- | ---------- |
+| 1 | Counter   | `useState`, `useRef` | Beginner   |
+
+More challenges will be added as I work through different React concepts and patterns.
+
+## 🛠️ Tech Stack
+
+* React
+* JavaScript
+* Vite
+* React Router
+* CSS
+* npm
+
+## 🎯 What I'm Practicing
+
+* React components
+* Props and component composition
+* State management
+* React Hooks
+* `useState`
+* `useRef`
+* Conditional rendering
+* Event handling
+* React Router
+* Data-driven rendering
+* Reusable component patterns
+* Accessible UI
+* Responsive layouts
+
+## 🏃 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Kananpretty/React-Challenges.git
+```
+
+Navigate into the project:
+
+```bash
+cd React-Challenges
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local development URL shown by Vite in your browser.
+
+## 📌 Approach
+
+Each challenge is kept small and focused on a particular React concept.
+
+Challenge metadata is maintained in a central data file, while each challenge has its own implementation. This allows the challenge page and navigation to remain reusable as new challenges are added.
+
+## 📚 Learning Goal
+
+This repository is part of my ongoing frontend development practice, with a focus on strengthening React fundamentals before moving into larger application architecture and full-stack projects.
+
+---
+
+Built with React + Vite.
