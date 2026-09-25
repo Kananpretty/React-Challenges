@@ -1,5 +1,6 @@
 import Counter from "../challenges/rc01-counter/Counter";
 import ToDoList from "../challenges/rc02-to-do-list/ToDoList";
+import UncontrolledForm from "../challenges/rc03-uncontrolled-form/UncontrolledForm";
 
 const challengesData = [
   {
@@ -40,6 +41,31 @@ const challengesData = [
       "Toggle all tasks: If all tasks are completed, the button should mark all tasks as incomplete; otherwise, it should mark all tasks as completed.",
     ],
     component: ToDoList,
+  },
+  {
+    id: 3,
+    slug: "uncontrolledForm",
+    title: "Uncontrolled Form",
+    concepts: [
+      "FormData",
+      "Uncontrolled Inputs",
+      "defaultValue",
+      "Reusable Components",
+    ],
+    description:
+      "Create an uncontrolled form with default values and display the submitted data using the browser's FormData API.",
+    difficulty: "Beginner",
+    requirements: [
+      "Display default values in the form inputs using defaultValue.",
+      "Manage form values without using React hooks or state.",
+      "Give each form input a name attribute so its value can be collected by FormData.",
+      "Handle form submission using a submit handler.",
+      "Prevent the browser's default form submission behavior.",
+      "Collect the values from all inputs using the browser's FormData API.",
+      "Display the collected form data inside an alert.",
+      "Refactor each form input into a reusable Input component.",
+    ],
+    component: UncontrolledForm,
   },
 ];
 
