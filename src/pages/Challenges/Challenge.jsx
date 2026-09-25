@@ -41,30 +41,64 @@ const Challenge = () => {
         <Link to={"/"}>All Challenges</Link>
         <h1>Challenge #{challengeDetail.id}</h1>
       </header>
-      <div className="challenge-page__details">
-        <p>{challengeDetail.title}</p>
-        <p>{challengeDetail.description}</p>
-        <ul className="challenge-page__concepts">
-          {challengeDetail.concepts.map((concept) => (
-            <li key={concept} className="challenge-page__concept-tag">
-              {concept}
-            </li>
-          ))}
-        </ul>
+
+      <div className="challenge-page__navigation challenge-page__navigation--top">
+        {previousChallenge ? (
+          <Link
+            to={`/challenges/${previousChallenge.slug}`}
+            className="challenge-page__nav-link challenge-page__nav-link--prev"
+          >
+            ← Prev
+          </Link>
+        ) : (
+          <span className="challenge-page__nav-spacer" aria-hidden="true" />
+        )}
+
+        {nextChallenge ? (
+          <Link
+            to={`/challenges/${nextChallenge.slug}`}
+            className="challenge-page__nav-link challenge-page__nav-link--next"
+          >
+            Next →
+          </Link>
+        ) : (
+          <span className="challenge-page__nav-spacer" aria-hidden="true" />
+        )}
       </div>
-      <div className="challenge-page__requirements">
-        <h2 className="challenge-page__requirements-title">Requirements</h2>
-        <ul>
-          {challengeDetail.requirements.map((requirement) => (
-            <li key={requirement}>{requirement}</li>
-          ))}
-        </ul>
+
+      <div className="challenge-page__content">
+        <div className="challenge-page__info">
+          <div className="challenge-page__details">
+            <p>{challengeDetail.title}</p>
+            <p>{challengeDetail.description}</p>
+            <ul className="challenge-page__concepts">
+              {challengeDetail.concepts.map((concept) => (
+                <li key={concept} className="challenge-page__concept-tag">
+                  {concept}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="challenge-page__requirements">
+            <h2 className="challenge-page__requirements-title">Requirements</h2>
+            <ul>
+              {challengeDetail.requirements.map((requirement) => (
+                <li key={requirement}>{requirement}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="challenge-page__solution-panel">
+          <h2 className="challenge-page__solution-title">Implementation</h2>
+          <section className="challenge-page__solution">
+            <ChallengeComponent />
+          </section>
+        </div>
       </div>
-      <section className="challenge-page__solution">
-        <h2>Implementation</h2>
-        <ChallengeComponent />
-      </section>
-      <div className="challenge-page__navigation">
+
+      <div className="challenge-page__navigation challenge-page__navigation--bottom">
         {previousChallenge ? (
           <Link
             to={`/challenges/${previousChallenge.slug}`}
