@@ -137,7 +137,7 @@ More challenges will be added as I work through different React concepts and pat
 Clone the repository:
 
 ```bash
-git clone https://github.com/Kananpretty/React-Challenges.git
+git clone https://github.com/kanan-mehta/React-Challenges.git
 ```
 
 Navigate into the project:
